@@ -344,10 +344,10 @@ class _ColorPickerState extends State<ColorPicker> {
         return Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            _buildHead(),
-            _buildDropdownPortraitMode(),
+            // _buildHead(),
+            // _buildDropdownPortraitMode(),
             _buildBody(),
-            _buildAlphaPicker(),
+            // _buildAlphaPicker(),
           ],
         );
 
