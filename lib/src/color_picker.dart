@@ -40,11 +40,13 @@ class ColorPicker extends StatefulWidget {
     this.color = Colors.blue,
     this.initialPicker = Picker.paletteHue,
     this.pickerOrientation = PickerOrientation.inherit,
+    this.height = 100.0,
     Key? key,
   }) : super(key: key);
 
   final ValueChanged<Color> onChanged;
   final Color color;
+  final double height;
 
   /// The first picker widget that is shown.
   ///
@@ -189,6 +191,7 @@ class _ColorPickerState extends State<ColorPicker> {
         name: 'Palette Value',
         picker: Picker.paletteValue,
         builder: (BuildContext context) => PaletteValuePicker(
+          height : widget.height,
           color: _hSVColor,
           onChanged: (HSVColor value) => super.setState(
             () => _hSVColorOnChanged(value),
