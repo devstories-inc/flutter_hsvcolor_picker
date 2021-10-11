@@ -70,13 +70,6 @@ class _PaletteValuePickerState extends State<PaletteValuePicker> {
             ),
           ),
         ),
-
-        // Slider
-        SliderPicker(
-          value: color.value,
-          onChanged: valueOnChange,
-          colors: valueColors,
-        )
       ],
     );
   }
