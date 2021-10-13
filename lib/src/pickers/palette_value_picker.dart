@@ -60,7 +60,8 @@ class _PaletteValuePickerState extends State<PaletteValuePicker> {
         SizedBox(
           height: widget.height,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+            // padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
             child: PalettePicker(
               position: Offset(color.hue, color.saturation),
               onChanged: hueSaturationOnChange,

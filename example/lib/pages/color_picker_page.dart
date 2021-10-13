@@ -30,8 +30,13 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
 
             ///---------------------------------
             child: ColorPicker(
-              color: Colors.blue,
-              onChanged: (value) {},
+              height: 200,
+              color: Colors.white,
+              onChanged: (value) {
+                // styleData.color = value;
+                print(value.toString());
+              },
+              initialPicker: Picker.paletteValue,
             ),
 
             ///---------------------------------

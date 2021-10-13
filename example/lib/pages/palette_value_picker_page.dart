@@ -38,6 +38,7 @@ class _PaletteValuePickerPageState extends State<PaletteValuePickerPage> {
                 ///---------------------------------
                 PaletteValuePicker(
                   color: color,
+                  height : 200,
                   onChanged: (value) => super.setState(
                     () => onChanged(value),
                   ),
